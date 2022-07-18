@@ -1,0 +1,23 @@
+mahsulotlar = { # Do'kondagi mahsulotlar
+    'olma':10000,
+    'anor':20000,
+    'uzum':40000,
+    'anjir':25000,
+    'shaftoli':30000
+    }
+
+bozorlik=['olma','anjir','non','anor']
+print ("sizling bozorligingiz\n")
+for n in bozorlik:
+    print(n)
+
+print ('\nDokonimizda \n bor:\n')        
+for n in mahsulotlar:
+    print (n)
+
+for buyum in bozorlik:
+        
+        if buyum not in mahsulotlar:
+            print(f"\niltimios {buyum} opkeling")
+        if buyum in mahsulotlar:
+            print (f"\n{buyum} bor, narhi {mahsulotlar[buyum]} som")
