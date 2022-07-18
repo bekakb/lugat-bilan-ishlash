@@ -1,0 +1,20 @@
+davlatlar = {
+    "o'zbekiston":'toshkent',
+    'aqsh':'washington d.c.',
+    'rossiya':'moskva',
+    'tojikiston':'dushanbe',
+    "qirg'iziston":'bishkek',
+    'qozog\'iston':'nursulton',
+    'malayziya':'kuala-lumpur',
+    'singapur':'sungapur',
+    'italiya':'rim'}
+print('\ndavlatlar')
+for k in sorted(davlatlar.keys()):
+    print (k.upper())
+print('\npoytaxtlar')
+for k in sorted(davlatlar.values()):
+    print (k.title())
+    
+dav=input('\nDavlatni kiriting >>> ').lower()
+if dav in davlatlar:
+    print(davlatlar[dav])
