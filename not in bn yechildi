@@ -1,0 +1,19 @@
+davlatlar = {
+    "o'zbekiston":'toshkent',
+    'aqsh':'washington d.c.',
+    'rossiya':'moskva',
+    'tojikiston':'dushanbe',
+    "qirg'iziston":'bishkek',
+    'qozog\'iston':'nursulton',
+    'malayziya':'kuala-lumpur',
+    'singapur':'sungapur',
+    'italiya':'rim'}
+for dav,poy in sorted(davlatlar.items()):
+    print(f'{dav.title()}ning poytahti {poy.title()}')
+    
+coun=input('Davlatni kiriting')
+
+if coun not in davlatlar:
+    print("nope")
+else:
+    print(f'{coun} {davlatlar[coun]}')
