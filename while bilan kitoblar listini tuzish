@@ -1,0 +1,9 @@
+sav='Yaxshi korgan kitobingizni kiriting'
+books=[]
+name=" "
+while name!="stop":
+    name=input(sav)
+    if name!='stop':
+        books.append(name)
+print(books)
+    
