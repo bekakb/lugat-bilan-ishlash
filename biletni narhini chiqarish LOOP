@@ -1,0 +1,17 @@
+bill=''
+while bill!='exit':
+    bill=input('yoshni kiriting')
+    if bill=='exit':
+        break
+    else:
+        yosh=int(bill)
+        if yosh<=7:
+            print (f'{bill} yoshliklarga bilet 2000 som')
+        elif yosh<=18:
+            print (f'{bill} yoshliklarga bilet 3000 som')
+        elif yosh<=65:
+            print (f'{bill} yoshliklarga bilet 10000 som')
+        elif yosh>65:
+            print ('SIZGA KIRISH TEKIN')
+
+print ('dastur tugadi')
