@@ -1,0 +1,22 @@
+bill=''
+ishora=True
+while ishora:
+    bill=input('yoshni kiriting')
+    if bill=='exit' or bill=='quit':
+        ishora=False
+    else:
+        yosh=int(bill)
+        if yosh<=7:
+            narh=2000
+        elif yosh<=18:
+            narh=3000
+        elif yosh<=65:
+            narh=10000
+        elif yosh>65:
+            narh=0
+
+        if narh>0:
+            print (f"Sizga chipta {narh} som")
+        else:
+            print ("SIZGA TEKIN")
+print ('dastur tugadi')
