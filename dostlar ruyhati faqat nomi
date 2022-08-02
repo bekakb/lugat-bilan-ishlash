@@ -1,0 +1,16 @@
+savol='dostingizni ismini kiriting'
+n=0
+dostlar=[]
+ishora=True
+while ishora:
+    dost=input(savol)
+    if dost=='exit':
+        ishora=False
+    else:
+        dostlar.append(dost)
+        n+=1
+print(f'sizning {n}ta dostingiz:')
+for m in dostlar:
+    print (m.title())
+    
+    
