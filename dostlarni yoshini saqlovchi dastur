@@ -1,0 +1,17 @@
+print('Dostlaringizni yoshini sqlash')
+dostlar={}
+n=0
+ishora=True
+while ishora:
+    ism=input('Dostingizni ismini kiriting>>> ')
+    yosh=input('Dostingizni yoshini kiriting>>> ')
+    dostlar[ism]=int(yosh)
+    javob=input('davom etasizmi (HA/YOQ)')
+    n+=1
+    if javob.lower()!='ha':
+        ishora=False
+print(f'\nSizning {n}ta dostingiz:')
+for ismi,yo in dostlar.items():
+    print(ismi.title(),yo,'yoshda')
+    
+    
