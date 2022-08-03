@@ -1,0 +1,16 @@
+buyurtmalar = []
+mahsulotlar = {'olma':20000,
+               'shaftoli':25000,
+               'tarvuz':18000,
+               'uzum':22000}
+n=1
+while True:
+    buyurtma=input(f'{n} Buyurtmangizni kiriting >>> ')
+    n+=1
+    if buyurtma=='exit':
+        break
+    if buyurtma in mahsulotlar.keys():
+        narh = mahsulotlar[buyurtma]
+        print(f"{buyurtma.title()} - {narh} so'm")
+    else:
+        print(f"Bizda {buyurtma} yo'q")
