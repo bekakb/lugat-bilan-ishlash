@@ -1,0 +1,14 @@
+bozorlik={}
+n=1
+while True:
+    buyum=input(f'{n} buyumni nomini kiriting')
+    if buyum=='exit':
+        break
+    else:
+        narh=input(f'{buyum} ning narhini kiriting')
+        bozorlik[buyum]=narh
+        n+=1
+
+for buy,nar in bozorlik.items():
+    print(f'{buy} narhi {nar} som')
+    
