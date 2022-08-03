@@ -1,0 +1,12 @@
+
+mahsulot=[]
+isho=True
+while isho:
+    buyum=input('Mahsulot nomini kiriting >>> ')
+    if buyum=='exit':
+        print('\n')
+        break
+    mahsulot.append(buyum)
+
+for buyum in mahsulot:
+    print(buyum.upper(),end=', ')
