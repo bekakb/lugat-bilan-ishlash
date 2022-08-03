@@ -1,0 +1,14 @@
+n=1
+bozorlik=[]
+narhlari={}
+while True:
+    buyumlar=input('buyum nomini kiriting')
+    if buyumlar=='exit':
+        break
+    bozorlik.append(buyumlar)
+for narh in bozorlik:
+    narhlari[narh]=input(f'{narh}ning narhini yozing')
+    if narh=='exit':
+        break
+for bu,na in narhlari.items():
+    print(f'\n{bu.upper()}ning narhi {na} som')
