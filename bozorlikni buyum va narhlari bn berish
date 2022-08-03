@@ -1,0 +1,9 @@
+n=1
+bozorlik={}
+while True:
+    buyumlar=input('buyum nomini kiriting')
+    if buyumlar=='exit':
+        break
+    narhlar=input(f'{buyumlar}ning narhini yozing')
+    bozorlik[buyumlar]=narhlar
+print(bozorlik)
