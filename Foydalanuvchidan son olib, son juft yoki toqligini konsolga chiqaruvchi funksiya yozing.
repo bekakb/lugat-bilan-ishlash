@@ -1,0 +1,10 @@
+def jort(son):
+    if son%2:
+        print(f'{son} toq ekan')
+    else:
+        print(f'{son} juft ekan')
+        
+        
+jort(5)
+son=int(input('sonni kiriting'))
+jort(son)
