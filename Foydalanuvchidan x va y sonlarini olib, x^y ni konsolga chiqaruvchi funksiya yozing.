@@ -1,0 +1,9 @@
+def dar(x,y):
+    print(f'{x} ning darajasi {y} = {x**y} ga teng')
+    
+dar(5, 6)
+
+x=int(input('x ni bering'))
+y=int(input('y ni bering'))
+
+dar(x, y)
