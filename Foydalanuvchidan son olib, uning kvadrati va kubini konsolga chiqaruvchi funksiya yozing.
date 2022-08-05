@@ -1,0 +1,5 @@
+def kvkub(son):
+    print(f'{son} ning kvadrati {son**2}\n{son} ning kubi {son**3}')
+    
+son=int(input('sonni bering'))
+kvkub(son)
