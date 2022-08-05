@@ -1,0 +1,7 @@
+def tyil(ism,tug):
+        print(f'{ism.title()} siz {2022-tug} yilda tugilgan ekansiz')
+    
+ism=input('Ismingizni kiriting')
+tug=int(input('yoshingizni kiriting'))
+
+tyil(ism, tug)
