@@ -1,0 +1,12 @@
+def kottasini_chiqar (bir,ikki):
+    if bir==ikki:
+        print('sonlar teng ekan')
+    elif bir>ikki:
+        print(f'{bir} - {ikki} dan katta ekan')
+    else:
+        print(f'{ikki} - {bir} dan katta ekan')
+
+kottasini_chiqar(12, 8)
+bir=int(input('birinchi sonni kiriting'))
+ikki=int(input('ikkinchi sonni kiriting'))       
+kottasini_chiqar(bir, ikki)  
