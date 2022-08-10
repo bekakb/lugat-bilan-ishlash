@@ -1,0 +1,9 @@
+def meme(x,y,z):
+    aaa=[x,y,z]
+    bbb=sorted(aaa)
+    return bbb[-1]
+
+x=input('x')
+z=input('z')
+y=input('y')
+print(meme(x, y, z))
