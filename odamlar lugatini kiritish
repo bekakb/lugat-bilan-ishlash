@@ -1,0 +1,20 @@
+def hum (jins,vazn,rang,boy,hajm=''):
+    odam={'jins':jins,
+          'vazn':vazn,
+          'rang':rang,
+          'boy':boy,
+          'hajm':hajm}
+    return odam
+
+odamlar=[]
+while True:
+    jins=input('jinsni kiriting > ')
+    vazn=input('vaznni kiriting > ')
+    rang=input('rangni kiriting > ')
+    boy=input('boyni kiriting > ')
+    hajm=input('hajmni kiriting > ')
+       
+    odamlar.append(hum(jins, vazn, rang, boy,hajm))
+    jav=input('yanami (y/n) >>> ')
+    if jav=='n':
+        break
