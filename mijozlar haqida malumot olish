@@ -1,0 +1,33 @@
+def foy (ismi, familiyasi, tugilgan_yili, tugilgan_joyi, email='', telefon=''):
+    odam={'ismi':ismi.title(),
+          'familiyasi':familiyasi.title(),
+          'tugilgan_yili':tugilgan_yili,
+          'tugilgan_joyi':tugilgan_joyi.upper(),
+          'email':email,
+          'telefon': telefon}
+    return odam
+
+
+# mijoz['familiyasi'],
+# mijoz['tugilgan_yili'],
+# mijoz['tugilgan_joyi'],
+# mijoz['telefon'])
+
+
+mijozlar=[]
+m='Mijoz'
+while True:
+    ismi=input(f'{m}ning ismini kiriting ')
+    familiyasi=input(f'{m}ning familiyasinin kiriting ')
+    tugilgan_yili=int(input(f'{m}ning tugilgan yilini kiriting '))
+    tugilgan_joyi=input(f'{m}ning tugilgan joyini kiriting ')
+    email=input('E mail (ixtiyoriy) ')
+    telefon=input('Telefon (ixtiyoriy) ')
+    mijozlar.append(foy(ismi, familiyasi, tugilgan_yili, tugilgan_joyi))
+    jav=input('yana mijoz kiritasizmi? (y/n) >>> ')
+    if jav=='n':
+        break
+    
+for mijoz in mijozlar:
+    print(f"{mijoz['ismi']} {mijoz['familiyasi']} "
+          f"{mijoz['tugilgan_yili']} yil, {mijoz['tugilgan_joyi']} da tugilgan")
