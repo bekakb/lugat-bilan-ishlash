@@ -1,0 +1,10 @@
+# def maxi(x,y,z):
+x=input('x=')
+y=input('y=')
+z=input('z=')
+aaa=[]
+aaa.append(x)
+aaa.append(y)
+aaa.append(z)
+bbb=(sorted(aaa))
+print(bbb[-1])
