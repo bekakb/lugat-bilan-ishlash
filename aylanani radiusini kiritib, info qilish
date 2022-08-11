@@ -1,0 +1,16 @@
+def ayl_inf(radius):
+    aylana={'radiuisi':radius,
+            'diametri':diametr,
+            'perimetri':perimetr,
+            'yuzasi':yuzi}
+    return aylana
+
+
+radius=int(input('radiusni kiriting'))
+diametr=radius*2
+perimetr=(2*radius)*3.14
+yuzi=3.14*radius**2
+
+ayl_inf(radius)
+
+
