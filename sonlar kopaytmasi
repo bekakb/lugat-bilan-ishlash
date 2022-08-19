@@ -1,0 +1,8 @@
+def kop(*sonlar):
+    suma=1
+    for son in sonlar:
+        suma*=son
+    return suma
+
+print(kop(4,5,6))
+    
